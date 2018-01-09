@@ -23,3 +23,5 @@ supposedly saved my credentials.  we'll see.
 I'm gonna modify a CAD part and push.
 
 another change to push. lets see if credential.helper lets me push to origin, well that seems like it worked.
+
+yes.  as expected i can push to origin now (without displaying my password).  when I commit the shell and desktop see it, online does not until i push to origin.
