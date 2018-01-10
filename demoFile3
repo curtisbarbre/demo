@@ -41,3 +41,17 @@ git log --oneline --decorate --graph --all
 do some stuff newIssue1
 
 'q' gets you back to command line
+
+
+$ git branch -d testing
+error: The branch 'testing' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D testing'.
+
+deletes local branch testing.
+
+$ git push origin --delete [branch]
+To https://github.com/schacon/simplegit
+ - [deleted]         [branch]
+ 
+ got an error on one branch.  changed default branch to SWdev and successfully deleted CAD-2nd-draft
+ 
