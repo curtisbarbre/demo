@@ -52,12 +52,11 @@ sends master branch to remote (origin) branch (master)
 merging conflicts:
 text based pops up and forces you to correct it manually, simple. save, add (perhaps you have to commit?) the add/commit resolves the conflict.
 
-
 $ git branch -d testing
 error: The branch 'testing' is not fully merged.
 If you are sure you want to delete it, run 'git branch -D testing'.
 
-deletes local branch testing.gi 
+deletes local branch testing.
 
 $ git push origin --delete [branch]
 To https://github.com/schacon/simplegit
