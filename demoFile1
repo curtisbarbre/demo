@@ -1,42 +1,5 @@
-this is demo file one
+this is demo file two
 
-adding changes to it to push to remote
+this is a modification on branch newBranch
 
-well that was a pain in the ass.
-turns out I had to get my username credentials sorted.
-ended up running:
-
-git remote add origin https://{username}:{password}@github.com/{username}/project.git
-|
-git remote add demoRemote https://curtisbarbre:{password}@github.com/curtisbarbre/demo.git
-
-to set up a new remote instead of just using the url. then :
-git push demoRemote CAD-2nd-Draft
-
-origin remote didn't have the password. possibly bc the repo was made on desktop.
-
-ran
-
-git config --global credential.helper wincred
-
-supposedly saved my credentials.  we'll see.
-I'm gonna modify a CAD part and push.
-
-another change to push. lets see if credential.helper lets me push to origin, well that seems like it worked.
-
-yes.  as expected i can push to origin now (without displaying my password).  when I commit the shell and desktop see it, online does not until i push to origin.
-
-added aliases
-$ git config --global alias.co checkout
-$ git config --global alias.br branch
-$ git config --global alias.ci commit
-$ git config --global alias.st status
-$ git config --global alias.last 'log -1 HEAD'
-$ git config --global alias.visual '!gitk' 
-the last one launches an external line of code using !
-gives us gitk
-
-git log --oneline --decorate --graph --all
-
-'q' will get you back to the command line! no idea why
 
