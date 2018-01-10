@@ -1,10 +1,19 @@
-this is demo file two
+this is demo file one
 
-this is a modification on branch newBranch
+adding changes to it to push to remote
 
-this is me finishing the newBranch mod
+well that was a pain in the ass.
+turns out I had to get my username credentials sorted.
+ended up running:
 
-this is the hotfix change
+git remote add origin https://{username}:{password}@github.com/{username}/project.git
+|
+git remote add demoRemote https://curtisbarbre:{password}@github.com/curtisbarbre/demo.git
+
+to set up a new remote instead of just using the url. then :
+git push demoRemote CAD-2nd-Draft
+
+origin remote didn't have the password. possibly bc the repo was made on desktop.
 
 ran
 
@@ -32,6 +41,3 @@ git log --oneline --decorate --graph --all
 do some stuff newIssue1
 
 'q' gets you back to command line
-
-copied demoFile1 to demoFile3 and added this line
-withSWparts
