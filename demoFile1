@@ -39,3 +39,5 @@ gives us gitk
 git log --oneline --decorate --graph --all
 
 do some stuff newIssue1
+
+'q' gets you back to command line
