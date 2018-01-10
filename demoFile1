@@ -36,6 +36,6 @@ $ git config --global alias.visual '!gitk'
 the last one launches an external line of code using !
 gives us gitk
 
->>>>>>  git log --oneline --decorate --graph --all
+git log --oneline --decorate --graph --all
 
 do some stuff newIssue1
