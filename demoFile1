@@ -40,3 +40,4 @@ git log --oneline --decorate --graph --all
 
 'q' will get you back to the command line! no idea why
 
+this is the hotfix change
