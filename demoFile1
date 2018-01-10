@@ -36,4 +36,7 @@ $ git config --global alias.visual '!gitk'
 the last one launches an external line of code using !
 gives us gitk
 
->>>>>>  git log --oneline --decorate --graph --all
+git log --oneline --decorate --graph --all
+
+'q' will get you back to the command line! no idea why
+
