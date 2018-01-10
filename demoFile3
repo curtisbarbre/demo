@@ -64,3 +64,27 @@ To https://github.com/schacon/simplegit
  
  got an error on one branch.  changed default branch to SWdev and successfully deleted CAD-2nd-draft
  
+ rebasing instead of straight merge:
+$ git checkout experiment
+$ git rebase master
+First, rewinding head to replay your work on top of it...
+Applying: added staged command
+
+$ git checkout master
+$ git merge experiment
+
+$ git rebase --onto master branch sub-branch
+shifts history of sub-branch to be a branch of master instead of branch.  
+might skip any history btwn master/branch and branch/sub-branch.
+Then fast-fwd merge
+$ git checkout master
+$ git merge client
+
+$ git rebase master branch
+adds history of branch onto master - after the already merged sub-branch.
+$ git checkout master
+$ git merge branch
+$ git branch -d sub-branch
+$ git branch -d branch
+and delete the branches once everything checks out.
+ONLY rebase your own local stuff.
